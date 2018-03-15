@@ -10,6 +10,7 @@
         margin: 0 auto;
         text-align: center;
         padding-top: px2rem(280);
+        font-weight: 500;
     }
     .header-background {
         @extend %flurBlur;
