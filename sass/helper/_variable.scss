@@ -44,10 +44,10 @@ $footBack: #ffcd40;
     overflow: hidden;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-justify-content: center;
+    justify-content: center;
     width: 100%;
-    min-height: 1rem;
+    min-height: 0.5rem;
 }
 
 // item-center
@@ -85,6 +85,6 @@ $fontSans;
 // font-size
 $le_1: px2rem(40);
 $le_2: px2rem(32);
-$le_3: px2rem(36);
+$le_3: px2rem(26);
 $le_4: px2rem(20);
 $le_5: px2rem(15);

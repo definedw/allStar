@@ -1,0 +1,15 @@
+.header {
+    background-color: #eee;
+    .header-toolbar {
+        background: darkcyan;
+    }
+}
+
+.content {
+    .content-item {
+        background-color: $comTxt;
+        &.live {
+            background-color: $norBack;
+        }
+    }
+}

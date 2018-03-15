@@ -1,0 +1,17 @@
+.tag-badge {
+    width: px2rem(80);
+    height: px2rem(5);
+    background-color: $footBack;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.desc {
+    font: {
+        size: $le_5;
+    }
+    line-height: 150%;
+    text-align: justify;
+    color: $norTxt;
+}

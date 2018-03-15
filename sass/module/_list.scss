@@ -1,0 +1,15 @@
+.list {
+    position: relative;
+    width: 100%;
+    .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-title {
+        color: $moreTxt;
+        font-size: $le_3;
+        text-align: center;
+    }
+}

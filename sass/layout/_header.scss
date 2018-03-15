@@ -2,7 +2,6 @@
     width: 100%;
     height: px2rem(700);
     // background-color: transparent;
-    background-color: #eee;
     position: relative;
     .header-title {
         color: $comTxt;
@@ -19,7 +18,6 @@
     .header-toolbar {
         padding-left: px2rem(140);
         height: px2rem(100);
-        background: darkcyan;
         display: flex;
         justify-content: flex-start;
         align-items: center;
