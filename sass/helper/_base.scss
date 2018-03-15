@@ -8,7 +8,6 @@ html {
     touch-action: pan-y;
     -webkit-user-select: none;
     user-select: none;
-    overflow: hidden;
     @extend %fullSize;
     font-size: 12px;
 }
@@ -20,9 +19,9 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-backface-visibility: hidden;
     -webkit-user-drag: none;
-    overflow: hidden;
     @extend %fullSize;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -44,7 +43,7 @@ a img {
 a {
     text-decoration: none;
     @include tapColor(transparent);
-    color: $defaultLinkColor;
+    color: $linkColor;
 }
 
 li {
