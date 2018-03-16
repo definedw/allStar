@@ -207,10 +207,66 @@
 
 // short-video
 .short-video {
+    background: #eee;
+    @extend %flexBox;
+    align-items: center;
+    flex-direction: column;
+    height: px2rem(950);
     .tag-badge {
         margin-top: px2rem(30);
+        left: 0;
+        transform: translateX(0%);
     }
     .order-list {
         padding-top: px2rem(60);
+        @extend %flexBox;
+        justify-content: center;
+        width: px2rem(440);
+        &_wrapper {
+            @extend %flexBox;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .spacer {
+            width: 1px;
+            height: 100%;
+            background: #ccc;
+        }
+        strong {
+            font-size: $le_3;
+            color: $otherTxt;
+        }
+        small {
+            font-size: $le_5;
+            color: $otherTxt;
+        }
+    }
+    .shortvideo-list {
+        padding-top: px2rem(60);
+        @extend %flexBox;
+        justify-content: center;
+        width: px2rem(1120);
+        &_wrapper {
+            @extend %flexBox;
+            justify-content: space-between;
+            width: 100%;
+            height: px2rem(520);
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+        .shortvideo-item {
+            width: (100% / 3);
+            &_lk {
+                width: px2rem(360);
+                height: px2rem(250);
+                @extend %flexBox;
+                flex-direction: column;
+                justify-content: space-between;
+                border: solid 1px #ccc;
+            }
+        }
+        .sub-title {
+            text-align: left;
+        }
     }
 }

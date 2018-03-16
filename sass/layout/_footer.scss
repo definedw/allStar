@@ -1,1 +1,60 @@
+.footer {
+    width: 100%;
+    height: px2rem(530);
+    position: relative;
+    @extend %flexBox;
+    align-items: center;
+    flex-direction: column;
+    &-wrapper {
+        width: px2rem(1000);
+    }
+    &-title {
+        font-size: $le_3;
+        color: $moreTxt;
+        padding-top: px2rem(100);
+    }
+    .contact-row {
+        width: 100%;
+        @extend %flexBox;
+        justify-content: flex-start;
+        padding-top: px2rem(30);
+        .address {
+            width: px2rem(500);
+        }
+        .tel,
+        .fax {
+            width: px2rem(250);
+        }
+        .postcode .website {
+            min-width: px2rem(200);
+        }
+        .desc {
+            display: inline-block;
+        }
+    }
+    .social-contact {
+        padding-top: px2rem(100);
+        width: px2rem(210);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_lk {
+            background: #fded01;
+        }
+        .icon {
+            width: px2rem(40);
+            height: px2rem(40);
+        }
+    }
+}
 
+.copyright {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: px2rem(70);
+    font-size: $le_5;
+    line-height: px2rem(70);
+    padding-left: px2rem(460);
+}

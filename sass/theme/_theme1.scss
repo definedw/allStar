@@ -11,5 +11,16 @@
         &.live {
             background-color: $norBack;
         }
+        &.short-video {
+            background-color: #eee;
+        }
     }
+}
+
+.footer {
+    background-color: $footBack;
+}
+
+.copyright {
+    background-color: #a9a9a9;
 }
