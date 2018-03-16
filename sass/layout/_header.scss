@@ -1,14 +1,14 @@
 .header {
     width: 100%;
-    height: px2rem(700);
     // background-color: transparent;
     position: relative;
+    @extend %flexBox;
+    @extend %itemCenter;
     .header-title {
         color: $comTxt;
         font-size: $le_1;
         margin: 0 auto;
         text-align: center;
-        padding-top: px2rem(280);
         font-weight: 500;
     }
     .header-background {
@@ -21,6 +21,10 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }
 

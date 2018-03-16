@@ -1,2 +1,176 @@
-<div>
-    Hello</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>live</title>
+    <!-- Handle of REM -->
+    <script>
+        ! function(e, i) {
+            var t = e.documentElement,
+                n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+                m = "orientationchange" in window ? "orientationchange" : "resize";
+            t.dataset.dpr = a;
+            for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name && (c = !0, d = l);
+            if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+            else {
+                var o = e.createElement("meta");
+                o.name = "viewport", o.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild.appendChild(o)
+            }
+            var s = function() {
+                var e = t.clientWidth;
+                e / a > 1920 && (e = 1920 * a), window.remScale = e / 1920, t.style.fontSize = 100 * (e / 1920) + "px"
+            };
+            s(), e.addEventListener && i.addEventListener(m, s, !1)
+        }(document, window);
+    </script>
+    <!-- Inject CSS -->
+    <link rel="stylesheet" href="../css/live.css">
+</head>
+
+<body>
+    <div id="allStar-live">
+        <div class="header">
+            <div class="header-background"></div>
+            <div class="header-toolbar">
+                <div class="logo-box">
+                    <i class="icon icon-allstar"></i>
+                    <a href="" class="logo-title">全明星</a>
+                </div>
+                <div class="nav-dropdown">
+                    <!-- record active status -->
+                    <div class="dropdown">
+                        <a href="" class="nav-text">首页</a>
+                        <i class="icon icon-down"></i>
+                    </div>
+                    <div class="dropdown-layer">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="">Other</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Second</a>
+                            </li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cooperation">
+                    <a href="" class="text" target="_blank">商业合作</a>
+                </div>
+            </div>
+            <div class="header-title">电商直播轻综艺</div>
+        </div>
+
+        <div class="content">
+            <div class="content-item live-sec">
+                <div class="content-title">自制娱乐综艺真人秀案例展示</div>
+                <div class="devider">
+                    <i class="icon icon-down_full"></i>
+                </div>
+            </div>
+            <div class="content-item live">
+                <div class="content-title_background">
+                    <img src="" alt="">
+                </div>
+                <div class="section">
+                    <div class="section-left">
+                        <div class="img-box">
+                            <img src="" alt="">
+
+                        </div>
+                        <div class="sub-title">《芒果女神带你看奥运》</div>
+                        <p class="desc">乐可旅行携手芒果TV、点球传媒推出的大型机制旅行体验真人秀节目《芒果女神看奥运》，由湖南卫视著名主持人刘烨领衔带领与旅游达人团开启极致旅程。</p>
+                    </div>
+                    <div class="section-right">
+                        <div class="img-box">
+                            <img src="" alt="">
+                        </div>
+                        <a href="" class="visit-all btn">观看全集</a>
+                        <a href="" class="apply-coop btn">申请合作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-item live">
+                <div class="content-title_background">
+                    <img src="" alt="">
+                </div>
+                <div class="section">
+                    <div class="section-left">
+                        <div class="img-box">
+                            <img src="" alt="">
+
+                        </div>
+                        <div class="sub-title">《芒果女神带你看奥运》</div>
+                        <p class="desc">乐可旅行携手芒果TV、点球传媒推出的大型机制旅行体验真人秀节目《芒果女神看奥运》，由湖南卫视著名主持人刘烨领衔带领与旅游达人团开启极致旅程。</p>
+                    </div>
+                    <div class="section-right">
+                        <div class="img-box">
+                            <img src="" alt="">
+                        </div>
+                        <a href="" class="visit-all btn">观看全集</a>
+                        <a href="" class="apply-coop btn">申请合作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-item live">
+                <div class="content-title_background">
+                    <img src="" alt="">
+                </div>
+                <div class="section">
+                    <div class="section-left">
+                        <div class="img-box">
+                            <img src="" alt="">
+
+                        </div>
+                        <div class="sub-title">《芒果女神带你看奥运》</div>
+                        <p class="desc">乐可旅行携手芒果TV、点球传媒推出的大型机制旅行体验真人秀节目《芒果女神看奥运》，由湖南卫视著名主持人刘烨领衔带领与旅游达人团开启极致旅程。</p>
+                    </div>
+                    <div class="section-right">
+                        <div class="img-box">
+                            <img src="" alt="">
+                        </div>
+                        <a href="" class="visit-all btn">观看全集</a>
+                        <a href="" class="apply-coop btn">申请合作</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-title">杭州全民星网络科技发展有限公司</div>
+                <div class="contact-row">
+                    <p class="desc address">地址：浙江省杭州市余杭区文一西路海创园18幢706室</p>
+                    <p class="desc postcode">邮编：310011</p>
+                </div>
+                <div class="contact-row">
+                    <p class="desc tel">电话：0571—********</p>
+                    <p class="desc fax">传真：0671-********</p>
+                    <p class="desc website">网址：www.abc.com</p>
+                </div>
+                <div class="social-contact">
+                    <a href="" class="social-contact_lk">
+                        <i class="icon icon-webo"></i>
+                    </a>
+                    <a href="" class="social-contact_lk">
+                        <i class="icon icon-weixin"></i>
+                    </a>
+                    <a href="" class="social-contact_lk">
+                        <i class="icon icon-mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                COPYRIGHT © 2017 - 2018. ALL RIGHTS RESERVED
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
