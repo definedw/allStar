@@ -1203,8 +1203,12 @@ iframe {
 .header {
   height: 7rem;
 }
+/* line 276, ../../sass/page/_home.scss */
+.header .header-background {
+  background-image: url("../images/page1/banner/page1_01.jpg");
+}
 
-/* line 278, ../../sass/page/_home.scss */
+/* line 281, ../../sass/page/_home.scss */
 .footer {
   height: 5.3rem;
 }
