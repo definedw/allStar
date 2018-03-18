@@ -13,7 +13,7 @@
     }
     .header-background {
         @extend %flurBlur;
-        z-index: -1;
+        background-size: 100% 100%;
     }
     .header-toolbar {
         padding-left: px2rem(140);

@@ -670,7 +670,7 @@ iframe {
 }
 /* line 14, ../../sass/layout/_header.scss */
 .header .header-background {
-  z-index: -1;
+  background-size: 100% 100%;
 }
 /* line 18, ../../sass/layout/_header.scss */
 .header .header-toolbar {
@@ -1077,30 +1077,26 @@ iframe {
 .header {
   background-color: #eee;
 }
-/* line 3, ../../sass/theme/_theme1.scss */
-.header .header-toolbar {
-  background: darkcyan;
-}
 
-/* line 9, ../../sass/theme/_theme1.scss */
+/* line 7, ../../sass/theme/_theme1.scss */
 .content .content-item {
   background-color: #ffffff;
 }
-/* line 11, ../../sass/theme/_theme1.scss */
+/* line 9, ../../sass/theme/_theme1.scss */
 .content .content-item.live {
   background-color: #f1f1f1;
 }
-/* line 14, ../../sass/theme/_theme1.scss */
+/* line 12, ../../sass/theme/_theme1.scss */
 .content .content-item.short-video {
   background-color: #eee;
 }
 
-/* line 20, ../../sass/theme/_theme1.scss */
+/* line 18, ../../sass/theme/_theme1.scss */
 .footer {
   background-color: #ffcd40;
 }
 
-/* line 24, ../../sass/theme/_theme1.scss */
+/* line 22, ../../sass/theme/_theme1.scss */
 .copyright {
   background-color: #a9a9a9;
 }
