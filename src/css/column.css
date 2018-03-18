@@ -249,6 +249,13 @@ iframe {
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+/* line 10, ../../sass/module/_icon.scss */
+.icon-down_full {
+  background-image: url("../images/page1/bg/page1_03.png");
 }
 
 /* Layout */
