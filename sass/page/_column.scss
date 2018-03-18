@@ -1,5 +1,8 @@
 .header {
     height: px2rem(550);
+    .header-background {
+        background-image: url('../images/page4/banner.jpg');
+    }
 }
 
 .column {
@@ -39,7 +42,6 @@
                 width: (100% / 3);
             }
             .column-item_lk {
-                border: solid 1px #ccc;
                 @extend %flexBox;
                 flex-direction: column;
                 .img-box {
@@ -119,7 +121,6 @@
         .more-item_lk {
             @extend %flexBox;
             flex-direction: column;
-            border: solid 1px #ccc;
         }
         .img-box {
             width: px2rem(240);
@@ -171,7 +172,6 @@
             .img-box {
                 width: px2rem(290);
                 height: px2rem(400);
-                background: indianred;
             }
         }
     }

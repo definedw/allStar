@@ -1,5 +1,8 @@
 .header {
     height: px2rem(550);
+    .header-background {
+        background-image: url('../images/page5/banner.jpg');
+    }
 }
 
 .show {
@@ -14,7 +17,6 @@
             .show-item_lk {
                 width: px2rem(366);
                 height: px2rem(287);
-                border: solid 1px #ccc;
                 @extend %flexBox;
                 flex-direction: column;
                 justify-content: center;
@@ -41,6 +43,9 @@
 }
 
 .tshow {
+    background-image: url('../images/page5/page5_73.png');
+    background-position: bottom;
+    background-size: cover;
     .tag-badge {
         margin-top: px2rem(25);
     }
@@ -55,7 +60,6 @@
                 flex-direction: column;
                 width: px2rem(248);
                 height: px2rem(194);
-                border: solid 1px #ccc;
             }
         }
         &_wrapper {
@@ -74,12 +78,21 @@
             font-size: $le_4;
             height: px2rem(40);
             color: $moreTxt;
+            background-color: $footBack;
             text-align: center;
+            position: relative;
+            top: 20%;
+        }
+        .sub-title {
+            font-size: $le_4;
         }
     }
 }
 
 .coop {
+    background-image: url('../images/page5/page5_74.jpg');
+    background-position: bottom;
+    background-size: cover;
     .tag-badge {
         margin-top: px2rem(30);
     }
@@ -101,6 +114,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
+                background-color: $comTxt;
             }
             .title {
                 font-size: px2rem(24);

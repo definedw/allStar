@@ -1,0 +1,176 @@
+// dialog scss
+.mask-background {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba(0, 0, 0, 0.3);
+    opacity: 0.96;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.8;
+        z-index: 998;
+        background-attachment: fixed;
+    }
+    &.open {
+        display: block;
+    }
+}
+
+.pop-window {
+    display: none;
+    @extend %flurBlur;
+    z-index: 1000;
+    background: transparent;
+    position: fixed;
+    // login background color
+    .pop-header {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        height: 80px;
+        z-index: 10;
+        .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 80px;
+            color: #fff;
+            font-size: $le_1;
+        }
+        .pop-close {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            z-index: 1;
+            .icon {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .pop-content {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        .linkage-bar {
+            height: 30px;
+        }
+    }
+    .pop-inner {
+        position: relative;
+        // top: 6rem;
+        height: auto;
+        overflow: hidden;
+        .cached {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    }
+    .scroll-content .scroll .pop-inner {
+        top: 0;
+    }
+    // filter-food
+    .pop-filter {
+        position: relative;
+        height: auto;
+    }
+    &.open {
+        display: block;
+    }
+    &.fullscreen {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: transparent;
+        // background-color: #ff0;
+        .pop-down-close {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            width: px2rem(40);
+            height: px2rem(40);
+            border: solid 2px #fff;
+            border-radius: 50%;
+            &:before {
+                position: absolute;
+                top: 17px;
+                left: 7px;
+                content: '';
+                width: 23px;
+                height: 2px;
+                background: #fff;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:after {
+                position: absolute;
+                top: 17px;
+                left: 7px;
+                content: '';
+                width: 23px;
+                height: 2px;
+                background: #fff;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.dialog-wrapper {
+    width: 60%;
+    height: 60%;
+    background-color: $comTxt;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    .pop-down-close {
+        @extend %flexBox;
+        @extend %itemCenter;
+        position: absolute;
+        width: px2rem(50);
+        height: px2rem(50);
+        border-radius: 50%;
+        border: solid #ccc 1px;
+        bottom: px2rem(-100);
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+    }
+}

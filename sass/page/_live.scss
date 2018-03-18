@@ -1,5 +1,8 @@
 .header {
     height: px2rem(500);
+    .header-background {
+        background-image: url('../images/page2/banner.jpg');
+    }
 }
 
 .live-sec {
@@ -9,9 +12,11 @@
 .living {
     .content-title_background {
         height: px2rem(300);
-        img {
-            // background-images ?
-        }
+        background-image: url('../images/page2/page2_34.jpg');
+        // width: 100%;
+        // img {
+        //     // background-images ?
+        // }
     }
     .section {
         padding: px2rem(100) px2rem(460);
@@ -26,7 +31,6 @@
             .img-box {
                 width: px2rem(540);
                 height: px2rem(290);
-                border: solid 1px #ccc;
             }
         }
         .sub-title {

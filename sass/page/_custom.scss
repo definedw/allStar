@@ -1,5 +1,8 @@
 .header {
     height: px2rem(500);
+    .header-background {
+        background-image: url('../images/page3/banner.jpg');
+    }
 }
 
 .custom-sec {
@@ -16,7 +19,6 @@
         .video-item {
             width: (100% / 4);
             &_lk {
-                border: solid 1px #ccc;
                 width: px2rem(280);
                 height: px2rem(210);
                 @extend %flexBox;
@@ -57,7 +59,6 @@
                 .img-box {
                     width: px2rem(300);
                     height: px2rem(200);
-                    border: solid #ccc 1px;
                 }
                 .text-box {
                     padding-left: px2rem(50);

@@ -51,6 +51,12 @@
     width: px2rem(150);
     line-height: px2rem(100);
     text-align: center;
+    &::hover {
+        .dropdown-layer {
+            display: block;
+            border: solid 1px #ccc;
+        }
+    }
     .dropdown {
         @extend %flexBox;
         @extend %itemCenter;

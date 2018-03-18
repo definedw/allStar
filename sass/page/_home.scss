@@ -27,7 +27,6 @@
 
 // live
 .live {
-    height: px2rem(770);
     .support {
         padding-top: px2rem(20);
         color: $moreTxt;
@@ -65,7 +64,9 @@
 }
 
 .custom-IP {
-    background-image: url('../images/page1/bg/page1_72.png');
+    background-image: url('../images/page1/bg/page172.png');
+    background-position: bottom;
+    background-size: cover;
     .section {
         &.custom-single {
             padding: px2rem(180) px2rem(420) 0;
@@ -74,7 +75,6 @@
                 height: px2rem(340);
             }
             .video-single_lk {
-                border: solid #ccc 1px;
                 position: relative;
                 display: block;
                 @extend %fullSize;
@@ -124,6 +124,8 @@
                         opacity: 0.7;
                         .title {
                             display: block;
+                            position: absolute;
+                            top: 50%;
                         }
                     }
                 }
@@ -200,7 +202,8 @@
 
 // short-video
 .short-video {
-    background: #eee;
+    background-image: url('../images/page1/bg/page1236.jpg');
+    background-size: 100% 100%;
     @extend %flexBox;
     align-items: center;
     flex-direction: column;
@@ -255,11 +258,12 @@
                 @extend %flexBox;
                 flex-direction: column;
                 justify-content: space-between;
-                border: solid 1px #ccc;
             }
         }
         .sub-title {
             text-align: left;
+            font-size: $le_4;
+            color: $comTxt;
         }
     }
 }
