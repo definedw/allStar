@@ -278,6 +278,11 @@ iframe {
   background-image: url("../images/close.svg");
 }
 
+/* line 30, ../../sass/module/_icon.scss */
+.icon-down {
+  background-image: url("../images/down.svg");
+}
+
 /* line 1, ../../sass/module/_form.scss */
 input {
   -webkit-appearance: textfield;
@@ -949,20 +954,23 @@ textarea::-webkit-input-placeholder {
   line-height: 1rem;
   text-align: center;
 }
-/* line 55, ../../sass/layout/_header.scss */
-.nav-dropdown::hover .dropdown-layer {
-  display: block;
-  border: solid 1px #ccc;
-}
-/* line 63, ../../sass/layout/_header.scss */
+/* line 57, ../../sass/layout/_header.scss */
 .nav-dropdown .dropdown .icon {
-  width: 0.3rem;
-  height: 0.3rem;
+  width: 0.25rem;
+  height: 0.25rem;
 }
-/* line 69, ../../sass/layout/_header.scss */
+/* line 61, ../../sass/layout/_header.scss */
+.nav-dropdown .dropdown .nav-text {
+  color: #ffffff;
+}
+/* line 66, ../../sass/layout/_header.scss */
 .nav-dropdown.active .dropdown-layer {
   display: block;
   border: solid 1px #ccc;
+}
+/* line 70, ../../sass/layout/_header.scss */
+.nav-dropdown.active a {
+  color: #ffffff;
 }
 /* line 74, ../../sass/layout/_header.scss */
 .nav-dropdown .dropdown-layer {
@@ -987,6 +995,10 @@ textarea::-webkit-input-placeholder {
   width: 1.5rem;
   line-height: 1rem;
   text-align: center;
+}
+/* line 94, ../../sass/layout/_header.scss */
+.cooperation a {
+  color: #ffffff;
 }
 
 /* line 1, ../../sass/layout/_content.scss */
@@ -1066,12 +1078,12 @@ textarea::-webkit-input-placeholder {
 }
 /* line 21, ../../sass/layout/_footer.scss */
 .footer .contact-row .address {
-  width: 5rem;
+  width: 6rem;
 }
 /* line 24, ../../sass/layout/_footer.scss */
 .footer .contact-row .tel,
 .footer .contact-row .fax {
-  width: 2.5rem;
+  width: 3rem;
 }
 /* line 28, ../../sass/layout/_footer.scss */
 .footer .contact-row .postcode .website {

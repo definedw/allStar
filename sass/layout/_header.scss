@@ -51,24 +51,24 @@
     width: px2rem(150);
     line-height: px2rem(100);
     text-align: center;
-    &::hover {
-        .dropdown-layer {
-            display: block;
-            border: solid 1px #ccc;
-        }
-    }
     .dropdown {
         @extend %flexBox;
         @extend %itemCenter;
         .icon {
-            width: px2rem(30);
-            height: px2rem(30);
+            width: px2rem(25);
+            height: px2rem(25);
+        }
+        .nav-text {
+            color: $comTxt;
         }
     }
     &.active {
         .dropdown-layer {
             display: block;
             border: solid 1px #ccc;
+        }
+        a {
+            color: $comTxt;
         }
     }
     .dropdown-layer {
@@ -91,4 +91,7 @@
     width: px2rem(150);
     line-height: px2rem(100);
     text-align: center;
+    a {
+        color: $comTxt;
+    }
 }
