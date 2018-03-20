@@ -27,6 +27,10 @@
 
 // live
 .live {
+    background-image: url('../images/page1/bg/page172.jpg');
+    background-position: bottom;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     .support {
         padding-top: px2rem(20);
         color: $moreTxt;
@@ -66,7 +70,8 @@
 .custom-IP {
     background-image: url('../images/page1/bg/page172.png');
     background-position: bottom;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     .section {
         &.custom-single {
             padding: px2rem(180) px2rem(420) 0;
@@ -178,7 +183,7 @@
         padding: px2rem(30) px2rem(300);
         @extend %flexBox;
         flex-wrap: wrap;
-        align-content: space-around;
+        align-content: space-between;
         height: px2rem(500);
         .multiple-item {
             width: (100% / 5);
