@@ -64,8 +64,7 @@
     }
     &.active {
         .dropdown-layer {
-            display: block;
-            border: solid 1px #ccc;
+            display: inline-block;
         }
         a {
             color: $comTxt;
@@ -73,8 +72,12 @@
     }
     .dropdown-layer {
         display: none;
+        background-color: #333;
         .nav-item {
             height: px2rem(100);
+            display: inline-block;
+            padding: px2rem(5) px2rem(10);
+            white-space: nowrap;
         }
         a {
             width: 100%;
