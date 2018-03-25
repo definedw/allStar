@@ -173,4 +173,7 @@
         transform: translateX(-50%);
         background-color: #fff;
     }
+    video {
+        @extend %fullSize;
+    }
 }
