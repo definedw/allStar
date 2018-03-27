@@ -29,7 +29,6 @@ $.dialog = {
         var op = $.extend({ type: 'GET', url: '', pop: 'default', external: false, data: {}, callback: null }, options);
         var $box = this.$box,
             $bgBox = this.$bgBox;
-
         if (!op.interceptor) {
             op.interceptor = dwz.getUrlInterceptor(op.url);
         }
@@ -45,7 +44,6 @@ $.dialog = {
         $box.show().translateY(document.documentElement.clientHeight + 'px');
 
         setTimeout(function() { $box.animate({ y: 0 }, 500, 'ease'); }, 200);
-
         if (op.url) {
             if (op.external) {
                 this.loadExternal(op.url);
@@ -64,12 +62,10 @@ $.dialog = {
                 data: params,
                 success: function(html) {
                     $box.triggerPageClear().find(dwz.config.pageClear$).triggerPageClear();
-
+                    $box.html(html);
+                    $box.initUI();
                     if (op.callback) {
                         op.callback.call($box, html, $.extend(params, op.data));
-                    } else {
-                        $box.html(html);
-                        $box.initUI();
                     }
                 },
                 error: dwz.ajaxError

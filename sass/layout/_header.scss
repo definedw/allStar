@@ -45,6 +45,7 @@
 }
 
 .nav-dropdown {
+    font-weight: 500;
     display: inline-block;
     height: 100%;
     font-size: $le_4;
@@ -88,6 +89,7 @@
     display: inline-block;
     height: 100%;
     font-size: $le_4;
+    font-weight: 500;
     width: px2rem(150);
     line-height: px2rem(100);
     text-align: center;
