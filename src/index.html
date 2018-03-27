@@ -416,27 +416,7 @@
 
 <script src="./js/dwz.touchwipe.js"></script>
 <script src="./js/dwz.ui.js"></script>
-<!-- <script src="./js/biz.video.js"></script> -->
-<script>
-    $(function() {
-        $(document).initUI();
-        $.dialog.init();
+<script src="./js/biz.menu.js"></script>
 
-        $('.dropdown').touchwipe({
-
-            touch: function(e) {
-                var navHeader = $('.nav-dropdown'),
-                    layer = $('.dropdwon-layer');
-
-                navHeader.addClass('active');
-
-                if (!$('.dropdown')) {
-                    navHeader.toggleClass();
-                }
-
-            }
-        })
-    });
-</script>
 <script src="./js/video.js"></script>
 </html>

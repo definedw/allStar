@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div id="allStar-custom">
+    <div id="allStar">
         <div class="header">
             <div class="header-background"></div>
             <div class="header-toolbar">
@@ -41,24 +41,26 @@
                     <a href="/" class="logo-title">全明星</a>
                 </div>
                 <div class="nav-dropdown">
-                    <!-- record active status -->
-                    <div class="dropdown">
-                        <a href="" class="nav-text">首页</a>
-                        <i class="icon icon-down"></i>
+                        <!-- record active status -->
+                        <div class="dropdown">
+                            <span href="" class="nav-text">首页</span>
+                            <i class="icon icon-down"></i>
+                        </div>
+                        <div class="dropdown-layer">
+                            <ul class="nav-list">
+                                <li class="nav-item b-line">
+                                    <a href="./live.html" target="_parent">电商直播轻综艺</a>
+                                </li>
+                                <li class="nav-item b-line">
+                                    <a href="./custom.html" target="_parent">品牌IP化短视频</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./column.html" target="_parent">栏目化电商短视频</a>
+                                </li>
+    
+                            </ul>
+                        </div>
                     </div>
-                    <div class="dropdown-layer">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a href="">Other</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Second</a>
-                            </li>
-                            <li class="nav-item"></li>
-                            <li class="nav-item"></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="cooperation">
                     <a href="" class="text" target="_blank">商业合作</a>
                 </div>
@@ -216,5 +218,6 @@
         $.dialog.init();
     });
 </script>
+<script src="../js/biz.menu.js"></script>
 
 </html>
