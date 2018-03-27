@@ -44,19 +44,21 @@
             <div class="nav-dropdown">
                 <!-- record active status -->
                 <div class="dropdown">
-                    <a href="" class="nav-text">首页</a>
+                    <span href="" class="nav-text">首页</span>
                     <i class="icon icon-down"></i>
                 </div>
                 <div class="dropdown-layer">
                     <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="">Other</a>
+                        <li class="nav-item b-line">
+                            <a href="./tpl/live.html" target="_parent">电商直播轻综艺</a>
+                        </li>
+                        <li class="nav-item b-line">
+                            <a href="./tpl/custom.html" target="_parent">品牌IP化短视频</a>
                         </li>
                         <li class="nav-item">
-                            <a href="">Second</a>
+                            <a href="./tpl/column.html" target="_parent">栏目化电商短视频</a>
                         </li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
+
                     </ul>
                 </div>
             </div>
@@ -104,7 +106,7 @@
         <div class="content-item live">
             <div class="content-title">电商直播轻综艺</div>
             <div class="content-sub_title">自制娱乐综艺真人秀案例展示</div>
-            <div class="support">浙江卫视/&\AMP;湖南卫视</div>
+            <div class="support">浙江卫视&amp;湖南卫视</div>
             <div class="tag-badge"></div>
 
             <div class="live-list list">
@@ -114,6 +116,7 @@
                             <div class="img-box"> <img src="./images/page1/bg/page1_16.png" alt=""> </div>
                             <span class="sub-title">芒果女神看奥运</span>
                             <p class="desc">乐可旅行携手芒果TV、点球传媒推出的大型机制旅行体验真人秀节目《芒果女神看奥运》，由湖南卫视著名主持人刘烨领衔带领与旅游达人团开启极致旅程。</p>
+                            <!-- <iframe src="http://v.youku.com/v_show/id_XMjExMjg3NjQxMg==.html?spm=a2hzp.8253876.0.0&f=29176618" frameborder="0"></iframe> -->
                         </a>
                     </div>
                     <div class="live-item item">
@@ -237,7 +240,7 @@
                     </div>
                     <div class="column-item item">
                         <a href="" class="column-item_lk">
-                            <div class="img-box"> <img src="./images/page1/bg/page1_335.png" alt=""> </div>
+                            <div class="img-box"> <img src="./images/page1/bg/page1_336.png" alt=""> </div>
                             <div class="sub-title">40人制作团队（百余成功案例）</div>
                         </a>
                     </div>
@@ -413,10 +416,26 @@
 
 <script src="./js/dwz.touchwipe.js"></script>
 <script src="./js/dwz.ui.js"></script>
+<!-- <script src="./js/biz.video.js"></script> -->
 <script>
     $(function() {
         $(document).initUI();
         $.dialog.init();
+
+        $('.dropdown').touchwipe({
+
+            touch: function(e) {
+                var navHeader = $('.nav-dropdown'),
+                    layer = $('.dropdwon-layer');
+
+                navHeader.addClass('active');
+
+                if (!$('.dropdown')) {
+                    navHeader.toggleClass();
+                }
+
+            }
+        })
     });
 </script>
 <script src="./js/video.js"></script>
