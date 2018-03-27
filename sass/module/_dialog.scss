@@ -171,9 +171,14 @@
         bottom: px2rem(-100);
         left: 50%;
         transform: translateX(-50%);
-        background-color: #fff;
+        background-color: #000;
     }
     video {
         @extend %fullSize;
+        display: block;
+    }
+    iframe {
+        @extend %fullSize;
+        display: block;
     }
 }

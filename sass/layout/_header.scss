@@ -60,6 +60,7 @@
         }
         .nav-text {
             color: $comTxt;
+            font-weight: 500;
         }
     }
     &.active {
@@ -94,6 +95,7 @@
     width: px2rem(150);
     line-height: px2rem(100);
     text-align: center;
+    font-weight: 500;
     a {
         color: $comTxt;
     }
