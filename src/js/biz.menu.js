@@ -1,7 +1,6 @@
 $(function() {
   $(document).initUI();
   $.dialog.init();
-  debugger
   $('.dropdown').touchwipe({
 
       touch: function(e) {

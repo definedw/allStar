@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>live</title>
+    <title>全明星直播</title>
     <!-- Handle of REM -->
     <script>
         ! function(e, i) {
@@ -175,18 +175,18 @@
     </div>
 </body>
 <script src="../js/dwz.core.js"></script>
+<script src="../js/dwz.ui.js"></script>
 <script src="../js/dwz.effect.js"></script>
 <script src="../js/dwz.dialog.js"></script>
-
+<script>
+        $(function() {
+            $(document).initUI();
+            $.dialog.init();
+        });
+    </script>
 <script src="../js/dwz.touchwipe.js"></script>
-<script src="../js/dwz.ui.js"></script>
 <script src="../js/biz.menu.js"></script>
 
-<script>
-    $(function() {
-        $(document).initUI();
-        $.dialog.init();
-    });
-</script>
+
 
 </html>
