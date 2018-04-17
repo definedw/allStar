@@ -108,6 +108,38 @@
                 padding-top: px2rem(60);
                 max-width: px2rem(420);
             }
+            .tag-box {
+                padding-top: px2rem(60);
+                .row-line {
+                    max-height: px2rem(80);
+                    margin-bottom: px2rem(30);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .tag-item {
+                    padding: px2rem(5) px2rem(20);
+                    color: #333;
+                    font-size: px2rem(24);
+                    background-color: #ffcd40;
+                    display: inline-block;
+                    line-height: px2rem(30);
+                    border-bottom-right-radius: px2rem(20);
+                    border-top-left-radius: px2rem(20);
+                    border-bottom-left-radius: px2rem(20);
+                    border-top-right-radius: px2rem(20);
+                    max-height: px2rem(80);
+                }
+            }
+            .content-title {
+                color: rgba(54, 54, 54, 1);
+                font-weight: 600;
+                font-size: px2rem(30);
+                line-height: px2rem(44);
+            }
+            .content-sub_title {
+                font-weight: 500;
+            }
         }
         .section-right {
             width: px2rem(840);
@@ -124,6 +156,7 @@
                     height: px2rem(170);
                     @extend %flexBox;
                     @extend %itemCenter;
+                    position: relative;
                     &:hover {
                         background-color: cornflowerblue;
                         opacity: 0.7;
@@ -131,11 +164,13 @@
                             display: block;
                             position: absolute;
                             top: 50%;
+                            color: #fff;
                         }
                     }
                 }
                 .title {
                     font-size: $le_4;
+                    font-weight: 500;
                     display: none;
                 }
             }
@@ -212,7 +247,7 @@
     @extend %flexBox;
     align-items: center;
     flex-direction: column;
-    height: px2rem(950);
+    height: px2rem(1200);
     .tag-badge {
         margin-top: px2rem(30);
         left: 0;
