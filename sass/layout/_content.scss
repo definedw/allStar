@@ -25,9 +25,10 @@
     text-align: center;
     padding-top: px2rem(70);
     font: {
-        size: $le_3;
-        weight: 400;
+        size: px2rem(30);
+        weight: 600;
     }
+    line-height: px2rem(44);
     color: $moreTxt;
 }
 
@@ -46,6 +47,7 @@
     padding-top: px2rem(25);
     font: {
         size: $le_4;
+        weight: 500;
     }
     color: $moreTxt;
 }
