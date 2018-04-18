@@ -45,11 +45,11 @@
 }
 
 .nav-dropdown {
-    font-weight: 500;
+    font-weight: 600;
     display: inline-block;
     height: 100%;
-    font-size: $le_4;
-    width: px2rem(150);
+    font-size: $le_3;
+    width: px2rem(250);
     line-height: px2rem(100);
     text-align: center;
     .dropdown {
@@ -61,12 +61,16 @@
         }
         .nav-text {
             color: $comTxt;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: $le_3;
         }
     }
     &.active {
         .dropdown-layer {
             display: inline-block;
+            .nav-list {
+                max-width: px2rem(220);
+            }
         }
         a {
             color: $comTxt;
@@ -77,9 +81,13 @@
         background-color: #333;
         .nav-item {
             height: px2rem(100);
-            display: inline-block;
+            // display: inline-block;
             padding: px2rem(5) px2rem(10);
             white-space: nowrap;
+            border-bottom: 1px solid #ccc;
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
         }
         a {
             width: 100%;
@@ -92,12 +100,11 @@
 .cooperation {
     display: inline-block;
     height: 100%;
-    font-size: $le_4;
-    font-weight: 500;
+    font-size: $le_3;
+    font-weight: 600;
     width: px2rem(150);
     line-height: px2rem(100);
     text-align: center;
-    font-weight: 500;
     a {
         color: $comTxt;
     }
