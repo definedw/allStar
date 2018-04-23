@@ -9,24 +9,30 @@
 
     <!-- Handle of REM -->
     <script>
-        ! function(e, i) {
+        ! function (e, i) {
             var t = e.documentElement,
                 n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
                 a = n ? Math.min(i.devicePixelRatio, 3) : 1,
                 m = "orientationchange" in window ? "orientationchange" : "resize";
             t.dataset.dpr = a;
-            for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name && (c = !0, d = l);
-            if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+            for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" ==
+                l.name && (c = !0, d = l);
+            if (c) d.content =
+                "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
             else {
                 var o = e.createElement("meta");
-                o.name = "viewport", o.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild.appendChild(o)
+                o.name = "viewport", o.content =
+                    "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+                    .appendChild(o)
             }
-            var s = function() {
+            var s = function () {
                 var e = t.clientWidth;
-                e / a > 1920 && (e = 1920 * a), window.remScale = e / 1920, t.style.fontSize = 100 * (e / 1920) + "px"
+                e / a > 1920 && (e = 1920 * a), window.remScale = e / 1920, t.style.fontSize = 100 * (e / 1920) +
+                    "px"
             };
             s(), e.addEventListener && i.addEventListener(m, s, !1)
         }(document, window);
+
     </script>
     <!-- Inject CSS -->
     <link rel="stylesheet" href="../css/coop.css">
@@ -38,20 +44,26 @@
             <div class="header-background"></div>
             <div class="header-toolbar">
                 <div class="logo-box">
-                    <a href="/"><i class="icon icon-allstar"></i></a>
-                </div>
+                    <a href="/">
+                        <i class="icon icon-allstar"></i>
+                    </a>
+								</div>
+								<div class="cooperation">
+										<a href="/" class="text" target="_blank">首页</a>
+								</div>
                 <div class="nav-dropdown" style="cursor: pointer;">
+                   
                     <!-- record active status -->
                     <div class="dropdown">
-                        <span href="" class="nav-text">首页</span>
+                        <span href="" class="nav-text">业务</span>
                         <i class="icon icon-down"></i>
                     </div>
                     <div class="dropdown-layer">
                         <ul class="nav-list">
-                            <li class="nav-item">
+                            <li class="nav-item b-line">
                                 <a href="./live.html" target="_parent">电商直播轻综艺</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item b-line">
                                 <a href="./custom.html" target="_parent">品牌IP化短视频</a>
                             </li>
                             <li class="nav-item">
@@ -61,9 +73,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="cooperation">
-                    <a href="" class="text" target="_blank">商业合作</a>
-                </div>
+
             </div>
             <div class="header-title">商业合作</div>
         </div>
@@ -251,38 +261,38 @@
                         <div class="coop-item">
                             <div class="title">战略合作</div>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="联系人" disabled="disabled" value="钟先生">
-							</label>
+                                <input type="text" placeholder="联系人" disabled="disabled" value="钟先生">
+                            </label>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="电话" disabled="disabled" value="13588815386">
-							</label>
+                                <input type="text" placeholder="电话" disabled="disabled" value="13588815386">
+                            </label>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="邮箱"  disabled="disabled" value="zhongchen@qmxpower.com">
-							</label>
+                                <input type="text" placeholder="邮箱" disabled="disabled" value="zhongchen@qmxpower.com">
+                            </label>
                         </div>
                         <div class="coop-item">
                             <div class="title">招商合作</div>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="联系人" disabled="disabled" value="周先生">
-							</label>
+                                <input type="text" placeholder="联系人" disabled="disabled" value="周先生">
+                            </label>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="电话" disabled="disabled" value="18667044623">
-							</label>
+                                <input type="text" placeholder="电话" disabled="disabled" value="18667044623">
+                            </label>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="邮箱" disabled="disabled" value="zhouxing@qmxpower.com">
-							</label>
+                                <input type="text" placeholder="邮箱" disabled="disabled" value="zhouxing@qmxpower.com">
+                            </label>
                         </div>
                         <div class="coop-item">
                             <div class="title">渠道合作</div>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="联系人" disabled="disabled" value="汪先生">
-							</label>
+                                <input type="text" placeholder="联系人" disabled="disabled" value="汪先生">
+                            </label>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="电话" disabled="disabled" value="15345817944">
-							</label>
+                                <input type="text" placeholder="电话" disabled="disabled" value="15345817944">
+                            </label>
                             <label for="" class="label-txt">
-								<input type="text" placeholder="邮箱" disabled="disabled" value="wangtao@qmxpower.com">
-							</label>
+                                <input type="text" placeholder="邮箱" disabled="disabled" value="wangtao@qmxpower.com">
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -299,7 +309,9 @@
                 <div class="contact-row">
                     <p class="desc tel">电话：0571—86808267</p>
                     <!-- <p class="desc fax">传真：0671-********</p> -->
-                    <p class="desc website">网址：<a href="http://www.qmxpower.com">www.qmxpower.com</a></p>
+                    <p class="desc website">网址：
+                        <a href="http://www.qmxpower.com">www.qmxpower.com</a>
+                    </p>
                 </div>
                 <div class="social-contact">
                     <a href="" class="social-contact_lk">
