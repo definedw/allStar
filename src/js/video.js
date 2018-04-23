@@ -6,7 +6,7 @@ var btns = [].slice.call(videoBtns);
 function videoPlay() {
     console.log($('#videoPlay'));
 }
-videoBtns.elements.forEach(btn => {
+videoBtns.elements.forEach(function(btn) {
     $(btn).on($.event.hasTouch ? 'touchstart' : 'click', function(e) {
         var videoUrl = $(this).attr('data-video-url');
 
