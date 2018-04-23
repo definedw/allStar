@@ -1,7 +1,7 @@
 .content {
     @extend %flexBox;
     @extend %itemCenter;
-    flex-direction: column;
+    @include flex-direction(column);
     width: 100%;
     position: relative;
     .content-item {

@@ -13,17 +13,18 @@
     .video-list_wrapper {
         padding: px2rem(70) px2rem(380);
         @extend %flexBox;
-        flex-wrap: wrap;
+        @include flex-wrap(wrap);
         height: px2rem(580);
-        align-content: space-between;
+        @include align-content(space-between);
+        @include justify-content(space-around);
         .video-item {
             width: (100% / 4);
             &_lk {
                 width: px2rem(280);
                 height: px2rem(210);
                 @extend %flexBox;
-                justify-content: space-between;
-                flex-direction: column;
+                @include flex-direction(column);
+                @include justify-content(space-between);
             }
             .img-box {
                 width: px2rem(280);
@@ -49,13 +50,13 @@
             flex-basis: 70%;
             @extend %flexBox;
             height: px2rem(440);
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-start;
+            @include flex-direction(column);
+            @include justify-content(space-around);
+            @include align-items(flex-start);
             &_item {
                 height: px2rem(200);
                 @extend %flexBox;
-                justify-content: space-between;
+                @include justify-content(space-between);
                 .img-box {
                     width: px2rem(300);
                     height: px2rem(200);
@@ -66,6 +67,9 @@
                     justify-content: center;
                     align-items: flex-start;
                     flex-direction: column;
+                    @include justify-content(center);
+                    @include align-items(flex-start);
+                    @include flex-direction(column);
                 }
                 .desc {
                     padding: px2rem(10) 0;
@@ -75,9 +79,9 @@
         .section-right {
             flex-basis: 30%;
             @extend %flexBox;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            @include justify-content(center);
+            @include align-items(flex-start);
+            @include flex-direction(column);
             .btn {
                 display: inline-block;
                 padding: px2rem(5) px2rem(30);

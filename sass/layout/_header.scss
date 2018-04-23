@@ -19,8 +19,8 @@
         padding-left: px2rem(140);
         height: px2rem(100);
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        @include justify-content(flex-start);
+        @include align-items(center);
         position: absolute;
         top: 0;
         left: 0;

@@ -9,13 +9,13 @@
     .order-list {
         padding-top: px2rem(60);
         @extend %flexBox;
-        justify-content: center;
+        @include justify-content(center);
         width: px2rem(440);
         left: 50%;
         transform: translateX(-50%);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
             width: 100%;
         }
         .spacer {
@@ -36,21 +36,21 @@
         padding: px2rem(60) px2rem(380);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
             flex-wrap: wrap;
             .column-item {
                 width: (100% / 3);
             }
             .column-item_lk {
                 @extend %flexBox;
-                flex-direction: column;
+                @include flex-direction(column);
                 .img-box {
                     width: px2rem(360);
                     height: px2rem(210);
                 }
                 .sub-title {
                     font-size: $le_4;
-                    align-self: flex-start;
+                    @include align-self(flex-start);
                     line-height: px2rem(30);
                 }
             }
@@ -68,20 +68,20 @@
     }
     .section {
         @extend %flexBox;
-        justify-content: space-between;
+        @include justify-content(space-between);
         padding: px2rem(60) px2rem(460);
         .section-left {
             width: px2rem(540);
             height: auto;
             @extend %flexBox;
-            align-items: flex-start;
-            flex-direction: column;
+            @include align-items(flex-start);
+            @include flex-direction(column);
         }
         .section-right {
             @extend %flexBox;
-            justify-content: center;
-            flex-direction: column;
-            align-items: flex-start;
+            @include justify-content(space-between);
+            @include flex-direction(column);
+            @include align-items(flex-start);
             .img-box {
                 width: px2rem(280);
                 height: px2rem(160);
@@ -116,11 +116,11 @@
         padding: px2rem(60) px2rem(230);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
         }
         .more-item_lk {
             @extend %flexBox;
-            flex-direction: column;
+            @include flex-direction(column);
         }
         .img-box {
             width: px2rem(240);
@@ -139,13 +139,13 @@
     .order-list {
         padding-top: px2rem(60);
         @extend %flexBox;
-        justify-content: center;
+        @include justify-content(center);
         width: px2rem(440);
         left: 50%;
         transform: translateX(-50%);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
             width: 100%;
         }
         .spacer {
@@ -166,7 +166,7 @@
         padding: px2rem(70) px2rem(330);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
         }
         .result-item_lk {
             .img-box {

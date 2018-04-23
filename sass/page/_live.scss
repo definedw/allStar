@@ -21,13 +21,13 @@
     .section {
         padding: px2rem(100) px2rem(460);
         @extend %flexBox;
-        justify-content: space-between;
+        @include justify-content(space-between);
         .section-left {
             width: px2rem(540);
             height: auto;
             @extend %flexBox;
-            align-items: flex-start;
-            flex-direction: column;
+            @include align-items(flex-start);
+            @include flex-direction(column);
             .img-box {
                 width: px2rem(540);
                 height: px2rem(290);
@@ -41,9 +41,9 @@
         }
         .section-right {
             @extend %flexBox;
-            justify-content: center;
-            flex-direction: column;
-            align-items: flex-start;
+            @include justify-content(center);
+            @include flex-direction(column);
+            @include align-items(flex-start);
             .img-box {
                 width: px2rem(280);
                 height: px2rem(160);

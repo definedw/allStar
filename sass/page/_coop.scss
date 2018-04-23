@@ -8,19 +8,18 @@
 .show {
     .tag-badge {
         margin-top: px2rem(25);
-        
     }
     .show-list {
         padding: px2rem(30) px2rem(387);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
             .show-item_lk {
                 width: px2rem(366);
                 height: px2rem(287);
                 @extend %flexBox;
-                flex-direction: column;
-                justify-content: center;
+                @include justify-content(center);
+                @include flex-direction(column);
             }
         }
         .sub-title {
@@ -57,8 +56,8 @@
             width: (100% / 3);
             &_lk {
                 @extend %flexBox;
-                justify-content: space-between;
-                flex-direction: column;
+                @include justify-content(space-between);
+                @include flex-direction(column);
                 width: px2rem(248);
                 height: px2rem(194);
             }
@@ -66,7 +65,7 @@
         &_wrapper {
             @extend %flexBox;
             flex-wrap: wrap;
-            align-content: space-between;
+            @include align-content(space-between);
             height: 100%;
         }
         .more-info {
@@ -104,7 +103,7 @@
         padding: px2rem(100) px2rem(397);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
             .coop-item {
                 width: px2rem(335);
                 height: px2rem(438);
@@ -112,14 +111,13 @@
                 box-shadow: 0px 0px 14px 0px rgba(110, 110, 110, 1);
                 padding: px2rem(20) px2rem(45);
                 @extend %flexBox;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
+                @include justify-content(space-around);
+                @include align-items(center);
+                @include flex-direction(column);
                 background-color: $comTxt;
             }
             .title {
                 font-size: px2rem(24);
-                ;
                 color: #101010;
                 text-align: center;
             }

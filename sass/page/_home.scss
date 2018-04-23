@@ -4,15 +4,16 @@
     .core-list_wrapper {
         padding: px2rem(60) px2rem(280);
         @extend %flexBox;
-        justify-content: center;
+        @include justify-content(center);
         .core-item {
+            @include flex(1);
             .core-item_lk {
                 width: px2rem(420);
                 height: px2rem(380);
                 position: relative;
                 @extend %flexBox;
-                flex-direction: column;
-                justify-content: space-between;
+                @include flex-direction(column);
+                @include justify-content(space-between);
             }
             .img-box {
                 width: px2rem(420);
@@ -44,15 +45,15 @@
     .live-list_wrapper {
         padding: px2rem(60) px2rem(380);
         @extend %flexBox;
-        justify-content: center;
+        @include justify-content(center);
         .live-item {
+            @include flex(1);
             .live-item_lk {
                 width: px2rem(360);
                 height: auto;
                 @extend %flexBox;
-                flex-direction: column;
-                // justify-content: space-between;
-                align-items: flex-start;
+                @include flex-direction(column);
+                @include align-items(flex-start);
             }
             .img-box {
                 width: px2rem(360);
@@ -98,12 +99,12 @@
         }
         padding: px2rem(180) px2rem(280) 0;
         @extend %flexBox;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex-direction(row);
+        @include justify-content(space-between);
         .section-left {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            @include flex-direction(column);
+            @include align-items(flex-start);
             .desc {
                 padding-top: px2rem(60);
                 max-width: px2rem(420);
@@ -136,8 +137,8 @@
             width: px2rem(840);
             .video-list {
                 @extend %flexBox;
-                flex-wrap: wrap;
-                align-content: space-around;
+                @include flex-wrap(wrap);
+                @include align-content(space-around);
                 height: px2rem(550);
             }
             .video-item {
@@ -181,7 +182,10 @@
         padding: px2rem(40) px2rem(480);
         &_wrapper {
             @extend %flexBox;
-            justify-content: center;
+            @include justify-content(center);
+            .column-item {
+                @include flex(1);
+            }
         }
         .column-item_lk {
             width: px2rem(450);
@@ -208,8 +212,8 @@
     .multiple-list_wrapper {
         padding: px2rem(30) px2rem(300);
         @extend %flexBox;
-        flex-wrap: wrap;
-        align-content: space-between;
+        @include flex-wrap(wrap);
+        @include align-content(space-between);
         height: px2rem(500);
         .multiple-item {
             width: (100% / 5);
@@ -217,8 +221,8 @@
                 width: px2rem(240);
                 height: px2rem(200);
                 @extend %flexBox;
-                flex-direction: column;
-                justify-content: space-between;
+                @include justify-content(space-between);
+                @include flex-direction(column);
             }
         }
         .sub-title {
@@ -236,8 +240,8 @@
     background-image: url('../images/page1/bg/page1236.jpg');
     background-size: 100% 100%;
     @extend %flexBox;
-    align-items: center;
-    flex-direction: column;
+    @include flex-direction(column);
+    @include align-items(center);
     height: px2rem(1200);
     .tag-badge {
         margin-top: px2rem(30);
@@ -251,7 +255,7 @@
         width: px2rem(440);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
+            @include justify-content(space-between);
             width: 100%;
         }
         .spacer {
@@ -271,15 +275,15 @@
     .shortvideo-list {
         padding-top: px2rem(60);
         @extend %flexBox;
-        justify-content: center;
+        @include justify-content(center);
         width: px2rem(1120);
         &_wrapper {
             @extend %flexBox;
-            justify-content: space-between;
             width: 100%;
             height: px2rem(520);
-            align-content: space-between;
-            flex-wrap: wrap;
+            @include justify-content(space-between);
+            @include flex-wrap(wrap);
+            @include align-content(space-between);
         }
         .shortvideo-item {
             width: (100% / 3);
@@ -287,8 +291,8 @@
                 width: px2rem(360);
                 height: px2rem(250);
                 @extend %flexBox;
-                flex-direction: column;
-                justify-content: space-between;
+                @include justify-content(space-between);
+                @include flex-direction(column);
             }
         }
         .sub-title {
