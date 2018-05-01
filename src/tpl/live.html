@@ -8,27 +8,34 @@
     <title>全明星直播</title>
     <!-- Handle of REM -->
     <script>
-        ! function(e, i) {
+        ! function (e, i) {
             var t = e.documentElement,
                 n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
                 a = n ? Math.min(i.devicePixelRatio, 3) : 1,
                 m = "orientationchange" in window ? "orientationchange" : "resize";
             t.dataset.dpr = a;
-            for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" == l.name && (c = !0, d = l);
-            if (c) d.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+            for (var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0; r < o.length; r++) l = o[r], "viewport" ==
+                l.name && (c = !0, d = l);
+            if (c) d.content =
+                "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
             else {
                 var o = e.createElement("meta");
-                o.name = "viewport", o.content = "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild.appendChild(o)
+                o.name = "viewport", o.content =
+                    "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no", t.firstElementChild
+                    .appendChild(o)
             }
-            var s = function() {
+            var s = function () {
                 var e = t.clientWidth;
-                e / a > 1920 && (e = 1920 * a), window.remScale = e / 1920, t.style.fontSize = 100 * (e / 1920) + "px"
+                e / a > 1920 && (e = 1920 * a), window.remScale = e / 1920, t.style.fontSize = 100 * (e / 1920) +
+                    "px"
             };
             s(), e.addEventListener && i.addEventListener(m, s, !1)
         }(document, window);
+
     </script>
     <!-- Inject CSS -->
     <link rel="stylesheet" href="../css/live.css">
+    <link rel="stylesheet" href="../css/nav_menu.css">
 </head>
 
 <body>
@@ -37,29 +44,21 @@
             <div class="header-background"></div>
             <div class="header-toolbar">
                 <div class="logo-box">
-                    <a href="/"><i class="icon icon-allstar"></i></a>
+                    <a href="/">
+                        <i class="icon icon-allstar"></i>
+                    </a>
                     <!-- <a href="/" class="logo-title">全明星</a> -->
                 </div>
-                <div class="nav-dropdown" style="cursor: pointer;">
-                    <!-- record active status -->
-                    <div class="dropdown">
-                        <span href="" class="nav-text">电商直播轻综艺</span>
-                        <i class="icon icon-down"></i>
-                    </div>
-                    <div class="dropdown-layer">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a href="/" target="_parent">首页</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./custom.html" target="_parent">品牌IP化短视频</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./column.html" target="_parent">栏目化电商短视频</a>
-                            </li>
-
-                        </ul>
-                    </div>
+                <div class="nav_menu3">
+                    <ul>
+                        <li class='nav-has-sub'><a>电商直播轻综艺</a>
+                            <ul>
+                                <li><a href='/'>首页</a></li>
+                                <li><a href='./custom.html'>品牌IP化短视频</a></li>
+                                <li><a href='./column.html'>栏目化电商短视频</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="cooperation">
                     <a href="./cooperate.html" class="text" target="_blank">商业合作</a>
@@ -153,7 +152,9 @@
                 <div class="contact-row">
                     <p class="desc tel">电话：0571—86808267</p>
                     <!-- <p class="desc fax">传真：0671-********</p> -->
-                    <p class="desc website">网址：<a href="http://www.qmxpower.com">www.qmxpower.com</a></p>
+                    <p class="desc website">网址：
+                        <a href="http://www.qmxpower.com">www.qmxpower.com</a>
+                    </p>
                 </div>
                 <div class="social-contact">
                     <a href="" class="social-contact_lk">
@@ -179,10 +180,11 @@
 <script src="../js/dwz.effect.js"></script>
 <script src="../js/dwz.dialog.js"></script>
 <script>
-    $(function() {
+    $(function () {
         $(document).initUI();
         $.dialog.init();
     });
+
 </script>
 <script src="../js/dwz.touchwipe.js"></script>
 <script src="../js/biz.menu.js"></script>
